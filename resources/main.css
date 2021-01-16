@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url(../assets/background.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title-abstract {
+    width: 100%;
+    height: 100px;
+}
+
+.title-abstract img {
+    height: 70px;
+    width: auto;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.lower-left .upper-right { 
+    width: 300px;
+    height: auto;
+}
+
+.lower-left img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+.upper-right img {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+.title-background img {
+    height: 50px;
+    width: auto;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
+
+/*rectangle*/
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rectangle {
+    box-sizing: border-box;
+    border: 10px solid white;
+    width: 900px;
+    height: 450px;
+    position: relative;
+}
+
+.rectangle-shadow {
+    width: 855px;
+    height: 410px;
+    border: 30px solid black;
+    opacity: 0.15;
+    filter: blur(5px);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+/*rectangle-interior-corners*/
+.horizontal-line, .title-background-2 {
+    width: 30px;
+    height: fit-content;
+}
+
+.horizontal-line img {
+    width: 18px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.title-background-2 img {
+    width: 18px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/*rectangle content*/
+.container-content {
+    width: 875px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-abstract-2 {
+    height: 30px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+.title-abstract-2 img {
+    height: 40px;
+    width: auto;
+}
+
+hr {
+    width: 250px;
+    background-color: white;   
+    margin-bottom: 40px;
+}
+
+.dummy-text {
+    width: 650px;
+    height: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    word-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}

@@ -1,0 +1,7 @@
+Requirements:
+1. The DOC should be well-formed
+2. Please use semantic tags to build the layout
+3. External stylesheet only
+4. Add meta tags (all of them, not only a selection)
+5. This is a full page app, so no horizontal nor vertical scrolling should happen
+6. Focus should be on alignments, positioning and working with images
