@@ -5,68 +5,86 @@ html, body {
     height: 100%;
 }
 
-/* ar fi de preferat sa nu avem stil direct pe body, puteai sa te legi de main pentru acest scop */
-body {
+/*ar fi de preferat sa nu avem stil direct pe body, puteai sa te legi de main pentru acest scop */
+main {
     background-image: url(../assets/background.jpg);
     background-position: cover;
     background-repeat: no-repeat;
     position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .title-abstract {
-    width: 100%;
-    height: 100px;
+    width: 600px;
+    height: 70px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
 }
 
 .title-abstract img {
     /* acesta este scopul wrapper-ului, sa nu avem dimensiuni fixe direct pe imagini */
-    height: 70px;
-    width: auto;
+    height: auto;
+    width: 100%;
     /* acesta este doar titlul principal din pagina, situat in partea de sus a paginii, nu aveai nevoie de pozitionare pt asta, doar spatiere */
     /* toate celelalte le-ai pozionat cu absolute, acesta cu relative, nu este consistent codul */
-    position: relative;
-    top: 100px;
+
+}
+
+.lower-left, .upper-right { 
+    width: 250px;
+    height: 600px;
+}
+
+.lower-left {
+    position: absolute;
+    bottom: 100px;
     left: 100px;
 }
 
-.lower-left .upper-right { 
-    width: 300px;
-    height: auto;
+.upper-right {
+    position: absolute;
+    right: 100px;
+    top: 100px;
 }
 
 .lower-left img {
-    /* exact aceeasi observatie ca mai sus */
-    width: 200px;
-    height: auto;
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
+    width: auto;
+    height: 100%;
 }
 
 .upper-right img {
-    width: 200px;
-    height: auto;
-    position: absolute;
-    right: 100px;
-    top: 100px;
+    width: auto;
+    height: 100%;
 }
 
-.title-background img {
+.title-background {
+    width: fit-content;
     height: 50px;
-    width: auto;
-    /* de ce nu pozitionam div-ul cu totul, doar imaginea? */
     position: absolute;
     bottom: 100px;
     right: 100px;
+}
+
+.title-background img {
+    height: 100%;
+    width: auto;
 }
 
 /*rectangle*/
 .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* NU! doar pentru un patrat centrat nu pot sa accept solutia asta. Puteai folosi flex si aliniai orizontal si vertical apoi ii construiai continutul */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.container-wrapper {
+    position: relative;
 }
 
 .rectangle {
@@ -102,13 +120,18 @@ body {
     left: 30px;
 }
 
-.title-background-2 img {
-    /* la fel ca mai sus, este gresita tehnica asta sa pozitionam doar imaginea, wrapper-ul ar trebui */
+.title-background-2 {
     width: 18px;
-    height: auto;
+    height: fit-content;
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+.title-background-2 img {
+    /* la fel ca mai sus, este gresita tehnica asta sa pozitionam doar imaginea, wrapper-ul ar trebui */
+    width: 100%;
+    height: auto;
 }
 
 /*rectangle content*/
