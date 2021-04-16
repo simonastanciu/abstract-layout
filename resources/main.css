@@ -5,7 +5,6 @@ html, body {
     height: 100%;
 }
 
-/*ar fi de preferat sa nu avem stil direct pe body, puteai sa te legi de main pentru acest scop */
 main {
     background-image: url(../assets/background.jpg);
     background-position: cover;
@@ -26,12 +25,8 @@ main {
 }
 
 .title-abstract img {
-    /* acesta este scopul wrapper-ului, sa nu avem dimensiuni fixe direct pe imagini */
     height: auto;
     width: 100%;
-    /* acesta este doar titlul principal din pagina, situat in partea de sus a paginii, nu aveai nevoie de pozitionare pt asta, doar spatiere */
-    /* toate celelalte le-ai pozionat cu absolute, acesta cu relative, nu este consistent codul */
-
 }
 
 .lower-left, .upper-right { 
@@ -80,7 +75,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* NU! doar pentru un patrat centrat nu pot sa accept solutia asta. Puteai folosi flex si aliniai orizontal si vertical apoi ii construiai continutul */
 }
 
 .container-wrapper {
@@ -129,7 +123,6 @@ main {
 }
 
 .title-background-2 img {
-    /* la fel ca mai sus, este gresita tehnica asta sa pozitionam doar imaginea, wrapper-ul ar trebui */
     width: 100%;
     height: auto;
 }
